@@ -46,7 +46,7 @@ export class ArticleListComponent {
     //Iniciamos la lista de productos
     this.listaProductos = [this.MeltedCheeseBurger, this.BigKingStreet, this.BaconBusted];
 
-    //Comprobamos si hay stock, si no lo hay desactivamos la venta
+    //Comprobamos si hay stock, si no lo hay, desactivamos la venta
     this.listaProductos.forEach(element => {
       if (element.cantidadEnStock == 0) {
         element.isOnSale = false;

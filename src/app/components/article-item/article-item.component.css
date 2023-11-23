@@ -6,6 +6,10 @@
     color: red;
 }
 
+.not-stock{
+    color: gray;
+}
+
 .not-available-burger {
     background: repeating-linear-gradient(
       -45deg,
@@ -64,7 +68,7 @@ svg{
 }
 
 .card-text {
-    font-size: 28px;
+    font-size: 40px;
     text-align: center;
 }
 
