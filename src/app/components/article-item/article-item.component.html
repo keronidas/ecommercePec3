@@ -5,7 +5,8 @@
         <p>Cantidad en stock: {{cantidadEnStock}} <span class="cantidad" [ngClass]="{
             'not-available': MeltedCheeseBurger.quantityInCart > cantidadEnStock,
             'available': MeltedCheeseBurger.quantityInCart <= cantidadEnStock
-        }" *ngIf="MeltedCheeseBurger.quantityInCart > cantidadEnStock">STOCK SUPERADO</span></p>
+        }" *ngIf="MeltedCheeseBurger.quantityInCart > cantidadEnStock">STOCK SUPERADO</span>
+        </p>
         <p class="card-text">{{MeltedCheeseBurger.price}} €</p>
 
     </div>
@@ -17,6 +18,5 @@
         
         }"> Cantidad: {{MeltedCheeseBurger.quantityInCart}}</p>
         <button (click)="disminuirCantidad()">-</button>
-
     </div>
 </div>
