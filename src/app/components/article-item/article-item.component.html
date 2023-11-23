@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">{{MeltedCheeseBurger.name}}</h5>
+        <img [src]=MeltedCheeseBurger.imageUrl alt="" class="card-img">
+        <p>Cantidad en stock: {{cantidadEnStock}} <span class="cantidad" [ngClass]="{
+            'not-available': MeltedCheeseBurger.quantityInCart > cantidadEnStock,
+            'available': MeltedCheeseBurger.quantityInCart <= cantidadEnStock
+        }" *ngIf="MeltedCheeseBurger.quantityInCart > cantidadEnStock">STOCK SUPERADO</span></p>
+        <p class="card-text">{{MeltedCheeseBurger.price}} €</p>
+
+    </div>
+    <div class="card-pursache">
+        <button (click)="aumentarCantidad()">+</button>
+        <p class="cantidad" [ngClass]="{
+            'not-available': MeltedCheeseBurger.quantityInCart > cantidadEnStock,
+            'available': MeltedCheeseBurger.quantityInCart <= cantidadEnStock
+        
+        }"> Cantidad: {{MeltedCheeseBurger.quantityInCart}}</p>
+        <button (click)="disminuirCantidad()">-</button>
+
+    </div>
+</div>
