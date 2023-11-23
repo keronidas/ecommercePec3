@@ -4,4 +4,5 @@ export interface ArticleModel {
     price: number;
     isOnSale: boolean;
     quantityInCart: number;
+    cantidadEnStock: number;
 }
