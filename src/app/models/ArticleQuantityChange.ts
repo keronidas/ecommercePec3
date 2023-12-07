@@ -1,4 +1,4 @@
-import { ArticleModel } from "./Article";
+import { ArticleModel } from "./article";
 
 export interface ArticleQuantityChange {
     articulo: ArticleModel;
